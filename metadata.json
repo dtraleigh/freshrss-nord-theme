@@ -1,8 +1,8 @@
 {
-	"name": "Nord",
-	"author": "joelchrono12",
-	"description": "A simple theme based on Nord’s color scheme",
-	"version": 0.1,
+	"name": "Nord Compact",
+	"author": "joelchrono12, dtraleigh",
+	"description": "Nord’s color scheme with a tidier mobile layout",
+	"version": 0.2,
 	"files": ["_frss.css","nord.css"],
 	"theme-color": "#2e3440"
 }

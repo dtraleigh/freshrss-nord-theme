@@ -853,6 +853,21 @@ li.item.active {
 	border-color: var(--border-elements);
 }
 
+.content .subtitle.horizontal-list {
+	flex-wrap: wrap;
+}
+
+.content .subtitle.horizontal-list .item {
+	flex: 0 1 auto;
+	min-width: 0;
+	max-width: 100%;
+}
+
+.content .subtitle.horizontal-list .item.date {
+	width: auto;
+	text-align: start;
+}
+
 .content > header .dropdown-menu .dropdown-header,
 .content > footer .dropdown-menu .dropdown-header {
 	color: var(--text-default);
@@ -1188,12 +1203,15 @@ optgroup::before {
 #stream.reader .flux {
 	background-color: var(--main-background);
 	border: none;
+	padding-left: .75rem;
+	padding-right: .75rem;
 }
 
 #stream.reader .flux .flux_content {
 	background-color: var(--accent-bg);
 	border: none;
 	border-radius: 12px;
+	padding-top: 1rem;
 }
 
 /*=== GLOBAL VIEW */
@@ -1270,8 +1288,24 @@ optgroup::before {
 		grid-column: 1 / span 2;
 	}
 
-	.nav_menu .btn {
-		margin-bottom: .5rem;
+	.nav_menu {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: .25rem .75rem;
+		padding: 5px .5rem;
+	}
+
+	.nav_menu .group {
+		margin: 0;
+	}
+
+	#stream.global .box {
+		display: block;
+		width: auto;
+		max-width: none;
+		margin: 1.25rem .75rem;
 	}
 
 	.nav_menu .stick .mark-read-menu .dropdown-toggle.btn {
